@@ -4,9 +4,36 @@ Smart EcoCenter is an Web Application that help users to recycle efficiently wit
 
 
 # Structure
-- dossier backend
-- dossier frontend
-- docker-compose.yml : definit un env conteneurise pour l'app a 3 services: front(react) + back(node.js+Express) + sata base()
 
 # Set-up
-  - 
+  1- cloner repository dans nos pc
+    ```
+    git clone https://github.com/YOUR-USERNAME/smart-ecocenter.git
+    cd smart-ecocenter
+    ```
+    si le git clone vous affiche des erreur concernant des caractere invisible:
+    ```
+    echo "git clone http://github.com/MARO2003/smart-ecocenter.git" | tr -d '\302\226' | bash
+    ```
+
+  2- creer les trois composant principale :
+    - le dossier backend
+    - le dossier frontend
+    - le fichier "docker-compose.yml" : definit un env conteneurise pour l'app a 3 services: front(react) + back(node.js+Express) + sata base()
+  
+  3- creer l'application reeact dans le front end:
+    ```
+    cd frontend
+    npx create-react-app .
+    ```
+
+  4- set-up node.js backend:
+    ```
+    cd ../backend
+    npm init -y
+    npm install express cors mongoose dotenv
+    ```
+    en initialisant "npm init -y" on a put creer le fichier package.json avec des valeurs par defaut (contient les infos et les dependances des projet).
+    apres on a installe plusieurs modules :
+      * 
+  
