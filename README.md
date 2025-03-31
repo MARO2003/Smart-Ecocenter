@@ -38,9 +38,9 @@ Smart EcoCenter is an Web Application that help users to recycle efficiently wit
     - en initialisant `npm init -y` on a put creer le fichier package.json avec des valeurs par defaut (contient les infos et les dependances des projet).
     - apres on a installe plusieurs modules :
         - **express** : a streamlined web application framework for Node.js designed to facilitate the creation of web applications and APIs.
-        - **cors** :  a browser-level security feature that disallows the requests (by default) to be made between different origins, i.e., a frontend client requesting                         a backend server that is deployed on a different origin or domain.
-        - **mongoose** : a popular **ODM** (Object Data Modeling) library for MongoDB and Node.js that simplifies database interactions by providing a schema-based                             solution to model application data.
-        - **dotenv** :  manage environment variables. Environment variables are values that are set outside of an application's code and are accessible to the                                   application during runtime. These variables often contain sensitive information like API keys, database connection strings, or configuration                                settings.
+        - **cors** :  a browser-level security feature that disallows the requests (by default) to be made between different origins, i.e., a frontend client requesting a backend server that is deployed on a different origin or domain.
+        - **mongoose** : a popular **ODM** (Object Data Modeling) library for MongoDB and Node.js that simplifies database interactions by providing a schema-based solution to model application data.
+        - **dotenv** :  manage environment variables. Environment variables are values that are set outside of an application's code and are accessible to the application during runtime. These variables often contain sensitive information like API keys, database connection strings, or configuration settings.
 
     A chaque fois qu'on fait des changements on doit redemarrer le serveur, alors **nodemon** va nous aide a redemarrer automatiquement le serveur :
     > **nodemon** : a module that develop node.js based applications by automatically restarting the node application when file changes in the directory are detected
@@ -52,7 +52,10 @@ Smart EcoCenter is an Web Application that help users to recycle efficiently wit
     > ```
     > "devStart" : "nodemon server.js"
     > ```
+    > ```
     > cd backend
     > npm run devStart
     > ```
+    Creer 
+
 
