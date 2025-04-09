@@ -1,4 +1,9 @@
 import React, {useEffect,useState} from 'react';
+import { Routes, Route } from "react-router-dom";
+import Home from './components/Pages/Home';
+import About from './components/Pages/About';
+import Contact from './components/Pages/Contact';
+import Locations from './components/Pages/Locations';
 
 function App() {
   const [backendData, setBackendData] = useState([{}])
@@ -12,15 +17,13 @@ function App() {
     )
   },[])
   return (
-    <div>
-      {(typeof backendData.users === 'undefined')?(
-        <p>Loading ...</p>
-      ):(
-        backendData.users.map((user,i)=>(
-          <p key={i}>{user}</p>
-        ))
-      )}
-    </div>
+    <Routes>
+      <Route path="/" element={<Home/>} />
+      <Route path="/about" element={<About/>} />
+      <Route path="/contact" element={<Contact/>} />
+      <Route path="/locations" element={<Locations/>} />
+    </Routes>
+    
   );
 }
 
